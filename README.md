@@ -1,30 +1,19 @@
 ```
- __                    _____  
-|  | ______   ____    /  |  | 
-|  |/ /  _ \ /    \  /   |  |_
-|    <  <_> )   |  \/    ^   /
-|__|_ \____/|___|  /\____   | 
-     \/          \/      |__| presents:
-     ____________________________
-    !\_________________________/!\
-    !!                         !! \
-    !! C:\> DistributedSystems !!  \
-    !!                         !!  !
-    !!                         !!  !
-    !!                         !!  !
-    !!                         !!  !
-    !!                         !!  !
-    !!                         !!  /
-    !!_________________________!! /
-    !/_________________________\!/
-       __\_________________/__/!_
-      !_______________________!/ )
-    ________________________    (__
-   /oooo  oooo  oooo  oooo /!   _  )_
-  /ooooooooooooooooooooooo/ /  (_)_(_)
- /ooooooooooooooooooooooo/ /    (o o)
-/C=_____________________/_/    ==\o/==
 
+                .__  .__         .__                   .___
+__  _  _______  |  | |  |   ____ |  |   ____  __ __  __| _/
+\ \/ \/ /\__  \ |  | |  | _/ ___\|  |  /  _ \|  |  \/ __ | 
+ \     /  / __ \|  |_|  |_\  \___|  |_(  <_> )  |  / /_/ | 
+  \/\_/  (____  /____/____/\___  >____/\____/|____/\____ | 
+              \/               \/                       \/ presented by:
+
+          .-~~~-.
+  .- ~ ~-(       )_ _
+ /                    ~ -.
+|         kon4 @ 84       ',
+ \                         .'
+   ~- ._ ,. ,.,.,., ,.. -~
+           '       '        
 ```
 ## Getting Started
 
@@ -64,3 +53,4 @@ This project is licensed under no license
 
 * **Nikita Kolytschew** - *Lecturer* - [Nik](https://github.com/nkolytschew)
 * **Billie Thompson** - *README.md template* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Claudio Matsuoka** - *ASCII-Art* -[cmatsuoka](https://github.com/cmatsuoka)
