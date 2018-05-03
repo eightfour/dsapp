@@ -62,5 +62,5 @@ This project is licensed under no license
 
 ## Acknowledgments
 
-* **Nikita Kolytschew** *Lecturer* - [Nik](https://github.com/nkolytschew)
+* **Nikita Kolytschew** - *Lecturer* - [Nik](https://github.com/nkolytschew)
 * **Billie Thompson** - *README.md template* - [PurpleBooth](https://github.com/PurpleBooth)
