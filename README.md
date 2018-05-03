@@ -53,4 +53,4 @@ This project is licensed under no license
 
 * **Nikita Kolytschew** - *Lecturer* - [Nik](https://github.com/nkolytschew)
 * **Billie Thompson** - *README.md template* - [PurpleBooth](https://github.com/PurpleBooth)
-* **Claudio Matsuoka** - *ASCII-Art* -[cmatsuoka](https://github.com/cmatsuoka)
+* **Claudio Matsuoka** - *ASCII-Art* - [cmatsuoka](https://github.com/cmatsuoka)
