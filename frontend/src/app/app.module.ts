@@ -7,8 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { LatestComponent } from './latest/latest.component';
 import { UploadComponent } from './upload/upload.component';
-import { MaterialComponent } from './material/material.component';
-
+import { MaterialModule } from './/material.module';
 
 @NgModule({
   declarations: [
@@ -17,10 +16,10 @@ import { MaterialComponent } from './material/material.component';
     RegisterComponent,
     LatestComponent,
     UploadComponent,
-    MaterialComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
