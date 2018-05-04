@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { LatestComponent } from './latest/latest.component';
 import { UploadComponent } from './upload/upload.component';
+import { MaterialComponent } from './material/material.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { UploadComponent } from './upload/upload.component';
     LoginComponent,
     RegisterComponent,
     LatestComponent,
-    UploadComponent
+    UploadComponent,
+    MaterialComponent
   ],
   imports: [
     BrowserModule
