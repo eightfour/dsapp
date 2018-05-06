@@ -15,22 +15,24 @@ public class UserServiceImpl implements UserService{
     @Autowired
     private UserRepository userRepository;
 
-    /*public User findById(Long id){
+    /*
+    public User findById(Long id){
         return userRepository.findById<User>(id);
     }
 
     public User findByEMail(String email){
        return userRepository.findByEMail(email);
     }
-
+    */
     public void saveUser(User user){
         userRepository.save(user);
     }
 
+    /*
     public void updateUser(User user){
         saveUser(user);
     }
-
+    
     public void deleteUserByEMail(String email){
         userRepository.deleteByEMail(email);
     }*/

@@ -1,9 +1,11 @@
 package edu.wallcloud.backend;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.NotEmpty;
 
 @Entity
 public class User {
@@ -11,8 +13,12 @@ public class User {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
+    @NotEmpty
+    @Column(name="name", nullable=false)
     private String name;
+    @Column(name="email", nullable=false)
     private String email;
+    @Column(name="password", nullable=false)
     private String password;
 
     public User() {}

@@ -9,7 +9,7 @@ public interface UserService {
 
     //User findByEMail(String email);
 
-    //void saveUser(User user);
+    void saveUser(User user);
 
     //void updateUser(User user);
 
