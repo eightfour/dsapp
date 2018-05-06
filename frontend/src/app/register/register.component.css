@@ -1,0 +1,33 @@
+.startpage-box {
+    margin: 0 0 3em;
+    padding: 50px 50px 2px;
+    text-align: left;
+    background-color: rgba(183, 194, 255, 0.3);
+    border-width:  0;
+    outline: 0 none;
+    border-style: solid;
+    border-color: inherit;
+    font-size: 1em;
+    line-height: 1.3em;
+    vertical-align: baseline;
+    font-family: inherit;
+    text-decoration: none;
+    text-overflow: ellipsis;
+}
+
+.oneline {
+    display: flex;
+    position: relative;
+    width: 2.3cm;
+    margin: 0.5em 0;
+    white-space: nowrap;
+    overflow: visible;
+}
+
+.oneline-left {
+
+}
+
+.oneline-right {
+
+}
