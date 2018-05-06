@@ -57,6 +57,6 @@ public class User {
 
     @Override
     public String toString(){
-        return "{\n" + "\"id\": " + this.getId() +",\n" + " \"name\": " + this.getName() +",\n" + " \"email\": " + this.getEMail() +",\n" + " \"password\": " + this.getPassword() +",\n" + "}";
+        return "{\n" + " \"id\": " + this.getId() +",\n" + " \"name\": " + this.getName() +",\n" + " \"email\": " + this.getEMail() +",\n" + " \"password\": " + this.getPassword() +",\n" + "}";
     }
 }

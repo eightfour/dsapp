@@ -9,7 +9,7 @@
 	<packaging>jar</packaging>
 
 	<name>backend</name>
-	<description>Demo project for Spring Boot</description>
+	<description>wallcloud-backend</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
