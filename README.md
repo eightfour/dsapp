@@ -1,5 +1,4 @@
 ```
-
                 .__  .__         .__                   .___
 __  _  _______  |  | |  |   ____ |  |   ____  __ __  __| _/
 \ \/ \/ /\__  \ |  | |  | _/ ___\|  |  /  _ \|  |  \/ __ | 
@@ -34,7 +33,7 @@ comming soon...
 ## Built With
 
 * [Angular](https://angular.io/) - Front-end Framework
-* [Angular Material](https://material.angular.io/) - UI Components 
+* [Angular Material](https://material.angular.io/) - UI Components
 * [Spring Boot](https://projects.spring.io/spring-boot/) - Application Framework
 * [Hibernate](http://hibernate.org/) - Persistence Framework
 * [MySQL](https://www.mysql.com/de/) - Database
@@ -47,7 +46,7 @@ comming soon...
 
 ## License
 
-This project is licensed under no license
+This project is licensed under the MIT License
 
 ## Acknowledgments
 
