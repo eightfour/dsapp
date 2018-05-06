@@ -1,0 +1,23 @@
+#container-logo {
+    display: inline-block;
+    width: 130px;
+}
+
+#link-logo {
+    color: black;
+    text-decoration: none;
+}
+
+#link-logo:link, #link-logo:visited, #link-logo:hover, #link-logo:active,{
+    color: black;
+    text-decoration: none;
+}
+
+#logo {
+    float: left;
+}
+
+#logo-text {
+    margin-top: 0;
+    float: right;
+}

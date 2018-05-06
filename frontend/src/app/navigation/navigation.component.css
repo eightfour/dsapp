@@ -1,0 +1,21 @@
+#container-nav {
+    background-color: rgba(183, 194, 255, 0.3);
+}
+
+#list-nav {
+    list-style-type: none;
+}
+
+#list-nav li {
+    display: inline;
+}
+
+.links-nav {
+    color: black;
+    text-decoration: none;
+}
+
+.links-nav:link, .links-nav:visited, .links-nav:hover, .links-nav:visited {
+    color: black;
+    text-decoration: none;
+}

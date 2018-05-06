@@ -11,8 +11,9 @@ import { UploadComponent } from './upload/upload.component';
 import { MaterialModule } from './/material.module';
 import { UserService } from './user.service';
 import { RoutingModule } from './/routing.module';
-import { MainviewComponent } from './mainview/mainview.component';
+import { StartpageComponent } from './startpage/startpage.component';
 import { UsersComponent } from './users/users.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -21,8 +22,9 @@ import { UsersComponent } from './users/users.component';
     RegisterComponent,
     LatestComponent,
     UploadComponent,
-    MainviewComponent,
+    StartpageComponent,
     UsersComponent,
+    NavigationComponent,
   ],
   imports: [
     BrowserModule,

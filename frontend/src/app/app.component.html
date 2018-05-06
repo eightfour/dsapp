@@ -1,9 +1,7 @@
-<div>
-  <i class="material-icons">cloud</i><h1>wallcloud</h1>
+<div id="container-logo">
+  <a id="link-logo" href="/startpage">
+    <i id="logo" class="material-icons">cloud</i><h2 id="logo-text">wallcloud</h2>
+  </a>
 </div>
-<nav>
-  <a routerLink="/latest">Latest</a>
-  <a routerLink="/upload">Upload</a>
-  <a routerLink="/users">Users</a>
-</nav>
+<app-navigation></app-navigation>
 <router-outlet></router-outlet>
