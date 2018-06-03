@@ -10,34 +10,39 @@ import edu.wallcloud.backend.User;
 
 @Service("userService")
 @Transactional
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserRepository userRepository;
 
-    /*
-    public User findById(Long id){
-        return userRepository.findById<User>(id);
+    public User findByName(String name) {
+        return this.userRepository.findByName(name);
     }
 
-    public User findByEMail(String email){
-       return userRepository.findByEMail(email);
+    public boolean isUserExist(User user) {
+        return findByName(user.getName()) != null;
     }
-    */
-    public void saveUser(User user){
+
+    public void saveUser(User user) {
         userRepository.save(user);
     }
 
-    /*
-    public void updateUser(User user){
-        saveUser(user);
-    }
-    
-    public void deleteUserByEMail(String email){
-        userRepository.deleteByEMail(email);
-    }*/
-
-    public List<User> findAllUsers(){
+    public List<User> findAllUsers() {
         return userRepository.findAll();
     }
+
+    /*
+     * public User findById(Long id){ return userRepository.findById<User>(id); }
+     * 
+     * public User findByEMail(String email){ return
+     * userRepository.findByEMail(email); }
+     */
+
+    /*
+     * public void updateUser(User user){ saveUser(user); }
+     * 
+     * public void deleteUserByEMail(String email){
+     * userRepository.deleteByEMail(email); }
+     */
+
 }

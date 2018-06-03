@@ -5,15 +5,14 @@ import edu.wallcloud.backend.User;
 
 public interface UserService {
 
-    //User findById(Long id);
-
-    //User findByEMail(String email);
-
+    User findByName(String name);
+    boolean isUserExist(User user);
     void saveUser(User user);
 
-    //void updateUser(User user);
+    List<User> findAllUsers();
 
+    //User findById(Long id);
+    //void updateUser(User user);
     //void deleteUserByEMail(String email);
 
-    List<User> findAllUsers();
 }

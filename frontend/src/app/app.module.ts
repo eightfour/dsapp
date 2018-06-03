@@ -14,6 +14,7 @@ import { RoutingModule } from './/routing.module';
 import { StartpageComponent } from './startpage/startpage.component';
 import { UsersComponent } from './users/users.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,8 @@ import { NavigationComponent } from './navigation/navigation.component';
     MaterialModule,
     HttpClientModule,
     RoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [UserService],
   bootstrap: [AppComponent]

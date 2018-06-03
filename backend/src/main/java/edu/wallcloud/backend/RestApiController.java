@@ -15,6 +15,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 
 @RestController
+@CrossOrigin(origins= "http://localhost:4200")
 public class RestApiController {
 
     @Autowired
@@ -40,11 +41,14 @@ public class RestApiController {
     //@CrossOrigin(origins= "http://localhost:4200")
     public ResponseEntity<?> createUser(@RequestBody User user, UriComponentsBuilder ucBuilder) {
         System.out.println("Creating User: \n" + user);
+        if(this.userService.isUserExist(user)){
+            System.out.println("Unable to create. User exists already.");
+            return new ResponseEntity<User>(HttpStatus.CONFLICT);
+        }
         userService.saveUser(user);
         HttpHeaders headers = new HttpHeaders();
-        headers.setLocation(ucBuilder.path("api/users/{id}").buildAndExpand(user.getId()).toUri());
+        headers.setLocation(ucBuilder.path("/users/{id}").buildAndExpand(user.getId()).toUri());
         return new ResponseEntity<String>(headers, HttpStatus.CREATED);
-        
     }
-    
+
 }
