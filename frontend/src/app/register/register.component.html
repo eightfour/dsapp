@@ -1,32 +1,37 @@
-<form #userForm="ngForm" accept-charset="UTF-8" class="startpage-box" id="register">
-  <h3>
-    <i class="material-icons">perm_identity</i>Register
-  </h3>
-  <div class="oneline">
-    <label for="name">
-      <i class="material-icons">account_box</i>
-    </label>
-    <input [(ngModel)]="user.name" placeholder="User Name" required="required" name="name" type="text">
+<!-- Material form register -->
+<form #userForm="ngForm" class="form-horizontal" id="register" class="startpage-box" accept-charset="UTF-8">
+  <p class="h4 text-center mb-4">Register</p>
+
+  <!-- Material input text -->
+  <div class="md-form">
+      <i class="fa fa-user prefix grey-text"></i>
+      <input [(ngModel)]="user.name" type="text" required="required" name="name" id="materialFormRegisterNameEx" class="form-control" placeholder="User name">
+      <label for="materialFormRegisterNameEx"></label>
   </div>
-  <div class="oneline">
-    <label for="email">
-      <i class="material-icons">email</i>
-    </label>
-    <input [(ngModel)]="user.email" placeholder="Email" required="required" name="email" type="email">
+
+  <!-- Material input email -->
+  <div class="md-form">
+      <i class="fa fa-envelope prefix grey-text"></i>
+      <input [(ngModel)]="user.email" type="email" name="email" required="required" id="materialFormRegisterEmailEx" class="form-control" placeholder="Email">
+      <label for="materialFormRegisterEmailEx"></label>
   </div>
-  <div class="oneline-left">
-    <label for="password">
-      <i class="material-icons">vpn_key</i>
-    </label>
-    <input [(ngModel)]="user.password" placeholder="Password" required="required" name="password" type=password value="">
+
+  <!-- Material input password -->
+  <div class="md-form">
+      <i class="fa fa-lock prefix grey-text"></i>
+      <input [(ngModel)]="user.password" name="password" type="password" required="required" id="materialFormRegisterPasswordEx" class="form-control" placeholder="Password">
+      <label for="materialFormRegisterPasswordEx"></label>
   </div>
-  <div class="oneline-right">
-    <label for="password_confirmation">
-      <i class="material-icons">vpn_key</i>
-    </label>
-    <input placeholder="Repeat Password" required="required" name="password_confirmation" type=password value="">
+
+    <!-- Material input password -->
+    <div class="md-form">
+      <i class="fa fa-lock prefix grey-text"></i>
+      <input type="password" name="password_confirmation" required="required" id="materialFormRegisterPasswordEx" class="form-control" placeholder="Confirm your password">
+      <label for="materialFormRegisterPasswordEx"></label>
   </div>
-  <button (click)="registerUser()" type="submit">
-    <i class="material-icons">done</i>Register
-  </button>
+
+  <div class="text-center mt-4">
+      <button (click)="registerUser()" class="btn btn-primary" type="submit">Register</button>
+  </div>
 </form>
+<!-- Material form register -->

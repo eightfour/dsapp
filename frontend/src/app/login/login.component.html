@@ -1,20 +1,33 @@
-<form method="POST" action="localhost:8080/user" accept-charset="UTF-8" class="startpage-box" id="login">
-  <h3>
-      <i class="material-icons">https</i>Login
-  </h3>
-  <div class="oneline-left">
-    <label for="username">
-        <i class="material-icons">account_box</i>
-    </label>
-    <input id="username" placeholder="User Name" required="required" name="username" type="text">
-  </div>
-  <div class="oneline-right">
-    <label>
-        <i class="material-icons">vpn_key</i>
-    </label>
-    <input id="password" placeholder="Password" required="required" name="password" value="">
-  </div>
-  <button type="submit">
-      <i class="material-icons">exit_to_app</i>Login
-    </button>
+<!-- Material form login -->
+<form #userForm="ngForm" class="form-horizontal" id="register" class="startpage-box" accept-charset="UTF-8">
+    <p class="h4 text-center mb-4">Login</p>
+
+    <!-- Material input text -->
+    <div class="md-form">
+        <i class="fa fa-envelope prefix grey-text"></i>
+        <input [(ngModel)]="user.name" type="text" id="materialFormLoginNameEx" required="required" name="name" class="form-control"
+            placeholder="User name">
+        <label for="materialFormLoginNameEx"></label>
+    </div>
+
+    <!-- Material input email -->
+    <div class="md-form">
+        <i class="fa fa-envelope prefix grey-text"></i>
+        <input [(ngModel)]="user.email" type="email" id="materialFormLoginEmailEx" required="required" name="email" class="form-control"
+            placeholder="Email">
+        <label for="materialFormLoginEmailEx"></label>
+    </div>
+
+    <!-- Material input password -->
+    <div class="md-form">
+        <i class="fa fa-lock prefix grey-text"></i>
+        <input [(ngModel)]="user.password" type="password" name="password" id="materialFormLoginPasswordEx" class="form-control"
+            placeholder="Password">
+        <label for="materialFormLoginPasswordEx"></label>
+    </div>
+
+    <div class="text-center mt-4">
+        <button (click)="loginUser()" class="btn btn-default" type="submit">Login</button>
+    </div>
 </form>
+<!-- Material form login -->
