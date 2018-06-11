@@ -11,6 +11,7 @@ __  _  _______  |  | |  |   ____ |  |   ____  __ __  __| _/
  /        kon4        ~ -.
 |         simeonsamuel    ',
  \        mertag96        .'
+  \       nurbak         /
    ~- ._ ,. ,.,.,., ,.. -~
            '       '        
 ```
@@ -45,6 +46,7 @@ comming soon...
 * **kon4** - *Developer*
 * **simeonsamuel** - *Developer*
 * **mertag96** - *Developer*
+* **nurbak** - *Developer*
 
 ## License
 
