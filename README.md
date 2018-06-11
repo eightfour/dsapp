@@ -8,8 +8,8 @@ __  _  _______  |  | |  |   ____ |  |   ____  __ __  __| _/
 
           .-~~~-.
   .- ~ ~-(       )_ _
- /                    ~ -.
-|         kon4 @ 84       ',
+ /        kon4        ~ -.
+|         simeonsamuel    ',
  \                         .'
    ~- ._ ,. ,.,.,., ,.. -~
            '       '        
@@ -43,6 +43,7 @@ comming soon...
 ## Authors
 
 * **kon4** - *Developer*
+* **simeonsamuel** - *Developer*
 
 ## License
 
