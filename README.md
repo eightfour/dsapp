@@ -10,7 +10,7 @@ __  _  _______  |  | |  |   ____ |  |   ____  __ __  __| _/
   .- ~ ~-(       )_ _
  /        kon4        ~ -.
 |         simeonsamuel    ',
- \                         .'
+ \        mertag96        .'
    ~- ._ ,. ,.,.,., ,.. -~
            '       '        
 ```
@@ -44,10 +44,11 @@ comming soon...
 
 * **kon4** - *Developer*
 * **simeonsamuel** - *Developer*
+* **mertag96** - *Developer*
 
 ## License
 
-This project is licensed under the MIT License
+This project is licensed under the MIT License.
 
 ## Acknowledgments
 
