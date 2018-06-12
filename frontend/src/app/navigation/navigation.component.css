@@ -19,3 +19,36 @@
     color: black;
     text-decoration: none;
 }
+
+.navbar-dark{
+    background-color: #213ca2 !important;
+    background: linear-gradient(30deg,#213ca2,#0A1365);
+}
+
+.fa-clock-o{
+    color: white;
+}
+
+.fa-upload{
+    color: white;
+}
+
+.fa-user{
+    color: white;
+}
+.navbar-nav{
+	align-items: center;
+}
+
+.navbar-expand-lg{
+    display: flex !important;
+	align-items: center;
+	justify-content: center;
+}
+
+.navbar-collapse{
+    align-items: center;
+    justify-content: center;
+}
+
+

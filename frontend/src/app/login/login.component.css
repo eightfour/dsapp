@@ -33,4 +33,5 @@
 
 .btn-default{
     background-color: #213ca2 !important;
+    background: linear-gradient(30deg,#213ca2,#0A1365);
 }
