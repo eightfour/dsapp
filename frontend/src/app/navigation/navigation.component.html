@@ -37,10 +37,23 @@
                   <!--<span class="sr-only">(current)</span>-->
               </a>
           </li>
-          <i class="fa fa-upload" aria-hidden="true" routerLink="/upload"></i>
-          <li class="nav-item">
-              <a class="nav-link" href="/upload">Upload</a>
-          </li>
+            <script>
+              if(window.location = "http://localhost:4200/startpage") { 
+            </script> 
+                <i class="fa fa-upload" aria-hidden="true" routerLink="/startpage"></i>
+                <li class="nav-item">
+                <a class="nav-link" href="/startpage">Upload</a>
+                </li>
+            <script>   
+                } else {
+            </script>
+                <i class="fa fa-upload" aria-hidden="true" routerLink="/upload"></i>
+                <li class="nav-item">
+                <a class="nav-link" href="/upload">Upload</a>
+                </li>
+            <script>
+            }
+            </script>
           <i class="fa fa-user" aria-hidden="true" routerLink="/users"></i>
           <li class="nav-item">
               <a class="nav-link" href="/users" >Users</a>
