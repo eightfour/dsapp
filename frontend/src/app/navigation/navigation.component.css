@@ -22,7 +22,7 @@
 
 .navbar-dark{
     background-color: #213ca2 !important;
-    background: linear-gradient(30deg,#213ca2,#0A1365);
+    background: linear-gradient(90deg,#213ca2,#0A1365);
 }
 
 .fa-clock-o{
@@ -37,7 +37,7 @@
     color: white;
 }
 .navbar-nav{
-	align-items: center;
+    align-items: center;
 }
 
 .navbar-expand-lg{
@@ -51,4 +51,33 @@
     justify-content: center;
 }
 
+#latest1{
+    margin-left: 10%;
+}
+
+#latest2{
+    margin-right: 10%;
+}
+
+#upload1{
+    margin-left: 10%;
+    
+}
+
+#upload2{
+    margin-right: 10%;
+}
+
+#users1{
+    margin-left: 10%;
+    
+}
+
+#users2{
+    margin-right: 10%;
+}
+
+#placeholder{
+    width: 60px;
+}
 

@@ -1,3 +1,4 @@
+<div class="text-center mt-4">
 <dropzone class="dropzone" #drpzone [message]="'Click or drag images here to upload'" (error)="onUploadError($event)" (success)="onUploadSuccess($event)"></dropzone>
-
-<button (click)="upload()">Upload</button>
+<button class="btn btn-default" (click)="upload()">Upload</button>
+</div>

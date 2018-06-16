@@ -1,0 +1,14 @@
+.btn-default{
+    background-color: #213ca2 !important;
+    background: linear-gradient(30deg,#213ca2,#0A1365);
+    align-items: center;
+}
+
+.dropzone{
+    border: white 0px;
+    vertical-align: center;
+}
+
+.dz-message{
+    height: 100px;
+}

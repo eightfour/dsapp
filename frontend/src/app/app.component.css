@@ -19,7 +19,17 @@
 	justify-content: center;
 }
 
+#logopic{
+    margin-top: 10px;
+}
+
 #logo-text {
     margin-top: 0;
     float: right;
+}
+
+#container-logo{
+    background-color: #213ca2 !important;
+    background: linear-gradient(90deg,#213ca2,#0A1365);
+    height: 130px;
 }
