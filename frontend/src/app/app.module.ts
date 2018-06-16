@@ -15,6 +15,16 @@ import { StartpageComponent } from './startpage/startpage.component';
 import { UsersComponent } from './users/users.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DropzoneModule } from 'ngx-dropzone-wrapper';
+import { DROPZONE_CONFIG } from 'ngx-dropzone-wrapper';
+import { DropzoneConfigInterface } from 'ngx-dropzone-wrapper';
+
+const DEFAULT_DROPZONE_CONFIG: DropzoneConfigInterface = {
+  url: 'https://localhost:8080',
+  autoProcessQueue: false,
+  addRemoveLinks: true,
+  acceptedFiles: 'image/*'
+};
 
 @NgModule({
   declarations: [
@@ -34,8 +44,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     RoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    DropzoneModule,
   ],
-  providers: [UserService],
+  providers: [{provide: DROPZONE_CONFIG, useValue: DEFAULT_DROPZONE_CONFIG}, {provide: UserService, useClass: UserService}],
+  // providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
