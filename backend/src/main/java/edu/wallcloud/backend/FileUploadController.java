@@ -39,8 +39,9 @@ public class FileUploadController {
     @GetMapping("/uploads")
     public String listUploadedFiles(Model model) throws IOException {
         System.out.println("Uploadstest");
-        model.addAttribute("files", storageService.loadAll().map(path -> MvcUriComponentsBuilder.fromMethodName(FileUploadController.class, "serveFile", path.getFileName().toString()).build().toString()).collect(Collectors.toList()));
-        return model + "";
+        model.addAttribute("\"files\"", storageService.loadAll().map(path -> "\"" +MvcUriComponentsBuilder.fromMethodName(FileUploadController.class, "serveFile", path.getFileName().toString() + "\"").build().toString()).collect(Collectors.toList()));
+        String ret = (model + "").replace('=', ':');
+        return ret;
     }
 
     @GetMapping("/files/{filename:.+}")
