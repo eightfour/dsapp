@@ -18,9 +18,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DropzoneModule } from 'ngx-dropzone-wrapper';
 import { DROPZONE_CONFIG } from 'ngx-dropzone-wrapper';
 import { DropzoneConfigInterface } from 'ngx-dropzone-wrapper';
+import { UploadService } from './upload.service';
 
 const DEFAULT_DROPZONE_CONFIG: DropzoneConfigInterface = {
-  url: 'http://localhost:8080/users',
+  url: 'http://localhost:8080/uploads',
   method: 'POST',
   headers: {
     'Accept': 'application/json',
@@ -50,7 +51,9 @@ const DEFAULT_DROPZONE_CONFIG: DropzoneConfigInterface = {
     ReactiveFormsModule,
     DropzoneModule,
   ],
-  providers: [{provide: DROPZONE_CONFIG, useValue: DEFAULT_DROPZONE_CONFIG}, {provide: UserService, useClass: UserService}],
+  providers: [{provide: DROPZONE_CONFIG, useValue: DEFAULT_DROPZONE_CONFIG},
+    {provide: UserService, useClass: UserService},
+    {provide: UploadService, useClass: UploadService}],
   // providers: [UserService],
   bootstrap: [AppComponent]
 })

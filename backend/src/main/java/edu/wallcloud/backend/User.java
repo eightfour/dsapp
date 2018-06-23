@@ -2,12 +2,14 @@ package edu.wallcloud.backend;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Table;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotEmpty;
 
 @Entity
+@Table(name = "uservs")
 public class User {
 
     @Id

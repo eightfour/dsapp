@@ -22,7 +22,11 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import edu.wallcloud.backend.storage.StorageFileNotFoundException;
 import edu.wallcloud.backend.storage.StorageService;
 
-@Controller
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@CrossOrigin(origins= "http://localhost:4200")
 public class FileUploadController {
 
     private final StorageService storageService;
@@ -32,25 +36,28 @@ public class FileUploadController {
         this.storageService = storageService;
     }
 
-    @GetMapping("/")
+    @GetMapping("/uploads")
     public String listUploadedFiles(Model model) throws IOException {
+        System.out.println("Uploadstest");
         model.addAttribute("files", storageService.loadAll().map(path -> MvcUriComponentsBuilder.fromMethodName(FileUploadController.class, "serveFile", path.getFileName().toString()).build().toString()).collect(Collectors.toList()));
-        return "uploadForm";
+        return model + "";
     }
 
     @GetMapping("/files/{filename:.+}")
     @ResponseBody
     public ResponseEntity<Resource> serveFile(@PathVariable String filename){
+        System.out.println("test");
         Resource file = storageService.loadAsResource(filename);
         return ResponseEntity.ok().header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + file.getFilename() + "\"").body(file);
     }
 
 
-    @PostMapping("/")
-    public String handleFileUpload(@RequestParam("file") MultipartFile file, RedirectAttributes redirectAttributes) {
-        storageService.store(file);
+    @PostMapping("/uploads")
+    public String handleFileUpload(@RequestParam("file") MultipartFile[] file, RedirectAttributes redirectAttributes) {
+        System.out.println("Image Uploaded.");
+        storageService.store(file[0]);
         redirectAttributes.addFlashAttribute("message",
-                "You successfully uploaded " + file.getOriginalFilename() + "!");
+                "You successfully uploaded " + file[0].getOriginalFilename() + "!");
         return "redirect:/";
     }
 
