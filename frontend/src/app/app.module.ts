@@ -20,7 +20,11 @@ import { DROPZONE_CONFIG } from 'ngx-dropzone-wrapper';
 import { DropzoneConfigInterface } from 'ngx-dropzone-wrapper';
 
 const DEFAULT_DROPZONE_CONFIG: DropzoneConfigInterface = {
-  url: 'https://localhost:8080',
+  url: 'http://localhost:8080/users',
+  method: 'POST',
+  headers: {
+    'Accept': 'application/json',
+  },
   autoProcessQueue: false,
   addRemoveLinks: true,
   acceptedFiles: 'image/*'

@@ -1,6 +1,12 @@
+/home/lv/code/git/github/wallcloud/backend/src/main/java/edu/wallcloud/backend/storage/StorageProperties.java
 /home/lv/code/git/github/wallcloud/backend/src/main/java/edu/wallcloud/backend/UserRepository.java
+/home/lv/code/git/github/wallcloud/backend/src/main/java/edu/wallcloud/backend/storage/StorageService.java
+/home/lv/code/git/github/wallcloud/backend/src/main/java/edu/wallcloud/backend/storage/StorageException.java
+/home/lv/code/git/github/wallcloud/backend/src/main/java/edu/wallcloud/backend/FileUploadController.java
 /home/lv/code/git/github/wallcloud/backend/src/main/java/edu/wallcloud/backend/UserServiceImpl.java
 /home/lv/code/git/github/wallcloud/backend/src/main/java/edu/wallcloud/backend/BackendApplication.java
 /home/lv/code/git/github/wallcloud/backend/src/main/java/edu/wallcloud/backend/UserService.java
+/home/lv/code/git/github/wallcloud/backend/src/main/java/edu/wallcloud/backend/storage/StorageFileNotFoundException.java
 /home/lv/code/git/github/wallcloud/backend/src/main/java/edu/wallcloud/backend/User.java
+/home/lv/code/git/github/wallcloud/backend/src/main/java/edu/wallcloud/backend/storage/FileSystemStorageService.java
 /home/lv/code/git/github/wallcloud/backend/src/main/java/edu/wallcloud/backend/RestApiController.java
