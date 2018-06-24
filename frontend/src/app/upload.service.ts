@@ -16,7 +16,7 @@ export class UploadService {
 
   constructor(private http: HttpClient) { }
 
-  getTest(): Observable<any> {
+  getFileLinks(): Observable<any> {
     return this.http.get(this.filesURL).pipe(map(res => this.saveFileLinks(JSON.stringify(res))));
   }
 
@@ -25,6 +25,10 @@ export class UploadService {
       console.log(this.fileLinks);
       console.log('element: ' + this.fileLinks.files[0]);
 
+  }
+
+  getFileLinksF(): any {
+    return this.fileLinks;
   }
 
 

@@ -2,7 +2,14 @@
 
 <div class="tz-gallery">
 
-  <div class="row">
+ <div class="row">
+         <div class="col-sm-6 col-md-4" *ngFor="let fileLink of fileLinkArr.files">
+                <a class="lightbox" href="{{fileLink}}">
+                    <img src="{{fileLink}}" alt="Park">
+                </a>
+            </div>
+
+
       <div class="col-sm-6 col-md-4">
           <a class="lightbox" href="../../assets/images/park.jpg">
               <img src="../../assets/images/park.jpg" alt="Park">

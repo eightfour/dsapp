@@ -38,7 +38,7 @@ public class FileUploadController {
 
     @GetMapping("/uploads")
     public String listUploadedFiles(Model model) throws IOException {
-        System.out.println("Uploadstest");
+        System.out.println("Images fetched");
         model.addAttribute("\"files\"", storageService.loadAll().map(path -> "\"" +MvcUriComponentsBuilder.fromMethodName(FileUploadController.class, "serveFile", path.getFileName().toString() + "\"").build().toString()).collect(Collectors.toList()));
         String ret = (model + "").replace('=', ':');
         return ret;
@@ -47,7 +47,7 @@ public class FileUploadController {
     @GetMapping("/files/{filename:.+}")
     @ResponseBody
     public ResponseEntity<Resource> serveFile(@PathVariable String filename){
-        System.out.println("test");
+        System.out.println("Single image fetched");
         Resource file = storageService.loadAsResource(filename);
         return ResponseEntity.ok().header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + file.getFilename() + "\"").body(file);
     }
@@ -55,7 +55,7 @@ public class FileUploadController {
 
     @PostMapping("/uploads")
     public String handleFileUpload(@RequestParam("file") MultipartFile[] file, RedirectAttributes redirectAttributes) {
-        System.out.println("Image Uploaded.");
+        System.out.println("Image uploaded.");
         storageService.store(file[0]);
         redirectAttributes.addFlashAttribute("message",
                 "You successfully uploaded " + file[0].getOriginalFilename() + "!");

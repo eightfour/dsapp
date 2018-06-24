@@ -22,6 +22,8 @@ import { UploadService } from './upload.service';
 
 const DEFAULT_DROPZONE_CONFIG: DropzoneConfigInterface = {
   url: 'http://localhost:8080/uploads',
+  maxFilesize: 20,
+  parallelUploads: 10,
   method: 'POST',
   headers: {
     'Accept': 'application/json',

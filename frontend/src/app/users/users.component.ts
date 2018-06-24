@@ -22,7 +22,7 @@ export class UsersComponent implements OnInit {
         error => console.log(error)
       );
 
-      this.uploadService.getTest().subscribe(
+      this.uploadService.getFileLinks().subscribe(
         data => {
 
         },
