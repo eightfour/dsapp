@@ -19,6 +19,7 @@ import { DropzoneModule } from 'ngx-dropzone-wrapper';
 import { DROPZONE_CONFIG } from 'ngx-dropzone-wrapper';
 import { DropzoneConfigInterface } from 'ngx-dropzone-wrapper';
 import { UploadService } from './upload.service';
+import { OnlyLoggedInUsersGuard } from './onlyLoggedInUsersGuard';
 
 const DEFAULT_DROPZONE_CONFIG: DropzoneConfigInterface = {
   url: 'http://localhost:8080/uploads',
@@ -52,11 +53,12 @@ const DEFAULT_DROPZONE_CONFIG: DropzoneConfigInterface = {
     FormsModule,
     ReactiveFormsModule,
     DropzoneModule,
+    RoutingModule,
   ],
   providers: [{provide: DROPZONE_CONFIG, useValue: DEFAULT_DROPZONE_CONFIG},
     {provide: UserService, useClass: UserService},
+    {provide: OnlyLoggedInUsersGuard, useClass: OnlyLoggedInUsersGuard},
     {provide: UploadService, useClass: UploadService}],
-  // providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -10,6 +10,7 @@ export class StartpageComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    localStorage.setItem('loggedIn', 'false');
   }
 
 }

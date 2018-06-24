@@ -8,44 +8,22 @@ import { UploadComponent } from './upload/upload.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { UsersComponent } from './users/users.component';
+import { UserService } from './user.service';
 
-
-
-//Manuell User gemacht zur Implemtierungstest, muss noch mit original verbunden werden
-class UserService {
-  
-  isLoggedIn(): boolean {
-    return true;
-  }
-}
-
-//Guard
-@Injectable()
-class OnlyLoggedInUsersGuard implements CanActivate {
-  constructor (private userService: UserService, private router: Router) {};
-
-  canActivate(){
-    console.log("OnylLoggedInUsersGuard");
-    if (this.userService.isLoggedIn()) {
-      return true;      
-    }else {
-      window.alert("You don't have permission to view this page! Please Register or Login.");
-      this.router.navigate(['startpage']);
-      return false;
-    }
-  }
-}
+import { OnlyLoggedInUsersGuard } from './onlyLoggedInUsersGuard';
 
 const routes: Routes = [
   { path: '', redirectTo: '/startpage', pathMatch: 'full' },
   { path: 'startpage', component: StartpageComponent },
   { path: 'latest', component: LatestComponent },
-  { path: 'upload', 
+  { path: 'upload',
     component: UploadComponent,
-    canActivate: [OnlyLoggedInUsersGuard] }, //Guard
+    canActivate: [OnlyLoggedInUsersGuard] },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  { path: 'users', component: UsersComponent },
+  { path: 'users',
+  component: UsersComponent,
+  canActivate: [OnlyLoggedInUsersGuard] },
 ];
 
 @NgModule({
@@ -53,7 +31,7 @@ const routes: Routes = [
   exports: [ RouterModule ],
   providers: [
     UserService,
-    OnlyLoggedInUsersGuard //Guard
+    OnlyLoggedInUsersGuard
   ]
 })
 export class RoutingModule { }

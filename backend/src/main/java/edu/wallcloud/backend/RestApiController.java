@@ -51,4 +51,24 @@ public class RestApiController {
         return new ResponseEntity<String>(headers, HttpStatus.CREATED);
     }
 
+    @RequestMapping(value ="/login", method=RequestMethod.POST)
+    public ResponseEntity<?> loginUser(@RequestBody User user, UriComponentsBuilder ucBuilder){
+        boolean valid = false;
+        if(!(this.userService.isUserExist(user))){
+            System.out.println("User doesn exist. Cant login.");
+            return new ResponseEntity<User>(HttpStatus.UNAUTHORIZED);
+        }
+        String password = user.getPassword();
+        User userInDB = this.userService.findByName(user.getName());
+        String passwordFromDB = userInDB.getPassword();
+        if(password.equals(passwordFromDB)){
+            System.out.println("User can login.");
+            valid = true;
+        }
+        if(valid){
+            return new ResponseEntity<User>(userInDB, HttpStatus.OK);
+        }
+        return new ResponseEntity<User>(HttpStatus.UNAUTHORIZED);
+    }
+
 }
