@@ -1,0 +1,24 @@
+#header{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex !important;
+}
+
+#comm{
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+#table1{
+    background-color: #213ca2 !important;
+    background: linear-gradient(90deg,#213ca2,#0A1365);
+    color: white;
+
+}
+
+.th{
+    text-align: center;
+    justify-content: center;
+}

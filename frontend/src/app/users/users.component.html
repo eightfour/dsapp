@@ -1,3 +1,25 @@
-<div *ngFor="let u of users">
-  {{u.name}}, {{u.email}}
+<br>
+<br>
+<div id="header">
+<img id="comm" src="../../assets/community.png" >
 </div>
+<br>
+<br>
+<table class="table">
+    <thead id="table1">
+      <tr>
+        <th class="th" scope="col">USERNAME</th>
+        <th class="th" scope="col">MAIL ADDRESS</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let u of users">
+        <td>
+          {{u.name}}
+        </td>
+        <td>
+          {{u.email}}
+        </td>
+      </tr>
+    </tbody>
+  </table>
