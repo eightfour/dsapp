@@ -21,13 +21,6 @@ export class UsersComponent implements OnInit {
         },
         error => console.log(error)
       );
-
-      this.uploadService.getFileLinks().subscribe(
-        data => {
-
-        },
-        error => console.log(error)
-      );
   }
 
 }
