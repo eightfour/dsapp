@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { RouterModule, Routes, Router, ActivatedRoute, CanActivate } from '@angular/router';
 import { UserService } from './user.service';
-import * as globals from './global';
 @Injectable()
 export class OnlyLoggedInUsersGuard implements CanActivate {
   constructor (private userService: UserService, private router: Router) {}

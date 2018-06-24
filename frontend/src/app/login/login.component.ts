@@ -3,7 +3,6 @@ import { Router } from '@angular/router';
 import { User } from '../user';
 import { UserService } from '../user.service';
 import { OnlyLoggedInUsersGuard } from '../onlyLoggedInUsersGuard';
-import * as globals from '../global';
 
 @Component({
   selector: 'app-login',
@@ -24,11 +23,8 @@ export class LoginComponent implements OnInit {
     this.userservice.loginUser(this.user).subscribe(res => {
       localStorage.setItem('loggedIn', 'true');
       this.guard.setCanActivateV(true);
-      //globals.setLoggedIn(true);
-      
       this.guard.canActivate();
       this.router.navigate(['/upload']);
-
     },
   err => {
     console.log(err);
