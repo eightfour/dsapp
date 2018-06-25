@@ -26,6 +26,7 @@ export class RegisterComponent implements OnInit {
     console.log(this.user.email);
     console.log(this.user.password);
     this.userService.registerUser(this.user).subscribe(response => {
+      localStorage.setItem('loggedIn', 'true');
       this.router.navigate(['/latest']);
     },
       err => {

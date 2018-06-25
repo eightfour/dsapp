@@ -30,6 +30,7 @@ export class LoginComponent implements OnInit {
     console.log(err);
     console.log('user cant login');
     this.userservice.setLoggedin(false);
+    alert('Cant login.');
   });
   }
 
