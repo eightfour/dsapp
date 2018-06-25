@@ -12,41 +12,34 @@ __  _  _______  |  | |  |   ____ |  |   ____  __ __  __| _/
 |         simeonsamuel    ',
  \        mertag96        .'
   \       nurbak         /
+   \      simseky       /
    ~- ._ ,. ,.,.,., ,.. -~
            '       '        
 ```
 ## Getting Started
 
-coming soon...
-
-### Prerequisites
-
-coming soon...
-
-### Installing
-
-comming soon...
-
-## Running the tests
-
-comming soon...
+* cd into backend folder and run ./mvnw spring-boot:run
+* cd into frontend folder and run npm install and ng s -o
 
 ## Built With
 
-* [Angular](https://angular.io/) - Front-end Framework
-* [Angular Material](https://material.angular.io/) - UI Components
-* [Spring Boot](https://projects.spring.io/spring-boot/) - Application Framework
-* [Hibernate](http://hibernate.org/) - Persistence Framework
+* [Angular](https://angular.io/) - Front-end framework
+* [Angular Material](https://material.angular.io/) - UI components
+* [Bootstrap](https://getbootstrap.com/) - Front-end component library
+* [Dropzonejs](http://www.dropzonejs.com/) - Open source javascript library
+* [Spring Boot](https://projects.spring.io/spring-boot/) - Application framework
+* [Hibernate](http://hibernate.org/) - Persistence framework
 * [MySQL](https://www.mysql.com/de/) - Database
 * [Maven](https://maven.apache.org/) - Build tool
 * **Love** - :heart:
 
 ## Authors
 
-* **kon4** - *Developer*
-* **simeonsamuel** - *Developer*
-* **mertag96** - *Developer*
-* **nurbak** - *Developer*
+* **[kon4](https://github.com/eightfour/wallcloud)** - *Developer*
+* **[simeonsamuel](https://github.com/simeonsamuel)** - *Developer*
+* **[mertag96](https://github.com/mertag96)** - *Developer*
+* **[nurbak](https://github.com/nurbak)** - *Developer*
+* **[simseky](https://github.com/simseky)** - *Developer*
 
 ## License
 
