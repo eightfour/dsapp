@@ -16,6 +16,7 @@ __  _  _______  |  | |  |   ____ |  |   ____  __ __  __| _/
    ~- ._ ,. ,.,.,., ,.. -~
            '       '        
 ```
+![wallcloud](https://github.com/eightfour/wallcloud/blob/master/screenshots/wallcloud.png)
 ## Getting Started
 
 * cd into backend folder and run ./mvnw spring-boot:run
