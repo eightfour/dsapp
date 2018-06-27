@@ -35,7 +35,7 @@ __  _  _______  |  | |  |   ____ |  |   ____  __ __  __| _/
 
 ## Authors
 
-* **[kon4](https://github.com/eightfour/wallcloud)** - *Developer*
+* **[kon4](https://github.com/eightfour)** - *Developer*
 * **[simeonsamuel](https://github.com/simeonsamuel)** - *Developer*
 * **[mertag96](https://github.com/mertag96)** - *Developer*
 * **[nurbak](https://github.com/nurbak)** - *Developer*
